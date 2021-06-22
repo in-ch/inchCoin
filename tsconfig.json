@@ -3,9 +3,10 @@
         "module" :"commonjs",
         "target":"ES2016",
         "sourceMap":true,
+        "outDir":"dist"
     },
     "include": [  // 컴파일 과정에서 포함할 파일의 배열을 적는 공간
-        "index.ts"
+        "index.ts","src/**/*"
     ],
     "exclude":["node_modules"]
 }
