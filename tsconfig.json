@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "module" :"commonjs",
+        "target":"ES2016",
+        "sourceMap":true,
+    },
+    "include": [  // 컴파일 과정에서 포함할 파일의 배열을 적는 공간
+        "index.ts"
+    ],
+    "exclude":["node_modules"]
+}
+// Typescript에게 어떻게 javascript로 변환하는 지 알려주면서 몇몇 옵션을 주는 세팅 파일 

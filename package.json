@@ -1,0 +1,22 @@
+{
+  "name": "inchcoin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start":"node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/in-ch/inchCoin.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/in-ch/inchCoin/issues"
+  },
+  "homepage": "https://github.com/in-ch/inchCoin#readme",
+  "dependencies": {
+    "typescript": "^4.3.4"
+  }
+}
