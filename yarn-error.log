@@ -1,0 +1,58 @@
+Arguments: 
+  /opt/homebrew/Cellar/node/16.3.0/bin/node /opt/homebrew/Cellar/yarn/1.22.10/libexec/bin/yarn.js add cryto-js
+
+PATH: 
+  /opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  16.3.0
+
+Platform: 
+  darwin arm64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/cryto-js: Not found
+      at Request.params.callback [as _callback] (/opt/homebrew/Cellar/yarn/1.22.10/libexec/lib/cli.js:66988:18)
+      at Request.self.callback (/opt/homebrew/Cellar/yarn/1.22.10/libexec/lib/cli.js:140749:22)
+      at Request.emit (node:events:394:28)
+      at Request.<anonymous> (/opt/homebrew/Cellar/yarn/1.22.10/libexec/lib/cli.js:141721:10)
+      at Request.emit (node:events:394:28)
+      at IncomingMessage.<anonymous> (/opt/homebrew/Cellar/yarn/1.22.10/libexec/lib/cli.js:141643:12)
+      at Object.onceWrapper (node:events:513:28)
+      at IncomingMessage.emit (node:events:406:35)
+      at endReadableNT (node:internal/streams/readable:1329:12)
+      at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+npm manifest: 
+  {
+    "name": "inchcoin",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "start": "tsc-watch --onSuccess \"node dist/index.js\""
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/in-ch/inchCoin.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/in-ch/inchCoin/issues"
+    },
+    "homepage": "https://github.com/in-ch/inchCoin#readme",
+    "dependencies": {
+      "tsc-watch": "^4.4.0",
+      "typescript": "^4.3.4"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
