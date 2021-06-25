@@ -3,7 +3,11 @@ import * as CryptoJs from "crypto-js";
 class Block {
     static calculateBlockHash = (index:number, previousHash: string, timestamp:number, data: string) : string => CryptoJs.SHA256(index + previousHash + timestamp + data).toString();
     static validateStructure = (aBlock: Block) : boolean => {
-        typeof aBlock.index === "number" && typeof aBlock.hash === "string" && typeof aBlock.previousHash === "string" && typeof aBlock.timestamp === "number" && typeof aBlock.data === "string";
+        if(typeof aBlock.index === "number" && typeof aBlock.hash === "string" && typeof aBlock.previousHash === "string" && typeof aBlock.timestamp === "number" && typeof aBlock.data === "string") {
+            return true; 
+        } else {
+            return false;
+        }
     }; 
 
     public index: number;
@@ -42,7 +46,7 @@ const createNewBlock = (data:string) : Block => {
     const newHash : string = Block.calculateBlockHash(newIndex, previousBlock.hash, newTimestamp, data);
     const newBlock : Block = new Block(newIndex, newHash, previousBlock.hash, data, newTimestamp);
     addBlock(newBlock);
-    
+
     return newBlock;
 };
 
